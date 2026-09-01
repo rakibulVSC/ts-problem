@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const calculateCartTotal = (products) => {
-    const total = products.reduce((acc, item) => acc + item.price);
+    let total = products.reduce((acc, item) => acc + item.price, 0);
     return total;
 };
 const products = [
